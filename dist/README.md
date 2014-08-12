@@ -9,5 +9,5 @@ How to use:
 place stylesheet adn or javascript tag in your head tag
 ```sh
 <link rel="stylesheet" href="styles/galss.min.css">
-<script src="scripts/galss.min.js"></script
+<script src="scripts/galss.min.js"></script>
 ```

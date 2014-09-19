@@ -1,5 +1,6 @@
 
 @import "variables";
+@import "mixins";
 
 /*! Tables Style */
 
@@ -26,5 +27,38 @@
 	}
 	td{
 		border:1px solid #ddd;
+	}
+}
+.table-even {
+	tbody tr:nth-child(even) {
+		background: #f7f7f7;
+	}
+}
+.table-odd {
+	tbody tr:nth-child(odd) {
+		background: #f7f7f7;
+	}
+}
+.table-hover {
+	tbody tr {
+		@include transition(0.4s ease-in-out);
+		&:hover {
+			background: #f2f2f2;
+			@include transition(0.4s ease-in-out);
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.table-responsive {
+		width: 100%;
+		margin-bottom: 15px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		border: 1px solid #ddd;
+		.gp-table thead tr th, .gp-table tbody tr th, .gp-table thead tr td, .gp-table tbody tr td, .gp-table tr th, .gp-table tr td {
+			white-space: nowrap;
+		}
 	}
 }

@@ -1,8 +1,8 @@
 
 @import "normalize";
 @import "variables";
-@import "font-awesome.css";
-@import "fonts.css";
+@import "font-awesome";
+@import "fonts";
 @import "mixins";
 @import "border";
 @import "marginpadding";
@@ -13,6 +13,7 @@
 @import "code";
 @import "table";
 @import "button";
+@import "sites";
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
   display:block;
@@ -95,10 +96,6 @@ button,select {
 button,html input[type="button"],input[type="reset"],input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-}
-
-button[disabled],html input[disabled] {
-  cursor: default;
 }
 
 input[type="checkbox"],input[type="radio"] {
@@ -418,19 +415,4 @@ img {
   clear:both;
 }
 
-/* Form setting */
-.gp-form-r{
-  margin-bottom:10px;
-  label{
-    width:180px;
-    display:inline-block;
-    margin-right:20px;
-  }
-  input[type="text"], input[type="password"], input[type="email"], textarea{
-    width:360px;
-    border:1px solid #c0c0c0;
-    padding:5px 10px;
-  }
-}
-/* end of form setting */
 

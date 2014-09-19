@@ -15,8 +15,8 @@
 @import "author";
 @import "normalize";
 @import "variables";
-@import "font-awesome.css";
-@import "fonts.css";
+@import "font-awesome";
+@import "fonts";
 @import "mixins";
 @import "border";
 @import "marginpadding";
@@ -26,7 +26,9 @@
 @import "grid";
 @import "code";
 @import "table";
+@import "form";
 @import "button";
+@import "sites";
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
   display:block;
@@ -109,10 +111,6 @@ button,select {
 button,html input[type="button"],input[type="reset"],input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-}
-
-button[disabled],html input[disabled] {
-  cursor: default;
 }
 
 input[type="checkbox"],input[type="radio"] {
@@ -238,9 +236,6 @@ img {
     }
 }
 
-.unstyle-list{
-  list-style: none;
-}
 .fixed{
   position: fixed;
 }
@@ -344,18 +339,6 @@ img {
 .left:before, .right:before{
   clear:both;
 }
-.a-left{
-  text-align:left;
-}
-.a-center{
-  text-align:center;
-}
-.a-right{
-  text-align:right;
-}
-.a-justify{
-  text-align:justify;
-}
 
 
 /*! ======= LAYOUTING STYLE ======= */
@@ -432,19 +415,30 @@ img {
   clear:both;
 }
 
-/* Form setting */
-.gp-form-r{
-  margin-bottom:10px;
-  label{
-    width:180px;
-    display:inline-block;
-    margin-right:20px;
-  }
-  input[type="text"], input[type="password"], input[type="email"], textarea{
-    width:360px;
-    border:1px solid #c0c0c0;
-    padding:5px 10px;
-  }
+/*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
 }
-/* end of form setting */
+::-webkit-scrollbar-thumb {
+    height: 60px;
+    background-color: #009272;
+    border-radius: 7px;
+}
+::-moz-appearance:scrollbar-thumb {
+    height: 60px;
+    background-color: #009272;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #eee;
+}
+::-webkit-scrollbar-corner {
+    background-color: #ccc;
+}
+::-webkit-resizer {
+    background-color: #666;
+}*/
 
